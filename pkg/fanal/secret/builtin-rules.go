@@ -74,7 +74,7 @@ var (
 
 // Reusable regex patterns
 const (
-	quote     = `["']?`
+	quote     = `[^0-9a-zA-Z]?`
 	connect   = `\s*(:|=>|=)?\s*`
 	endSecret = `[.,]?(\s+|$)`
 	startWord = "([^0-9a-zA-Z]|^)"
